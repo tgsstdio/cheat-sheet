@@ -9,21 +9,76 @@
     <link 
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat"/>
-    <link rel="stylesheet" href="print.css" type="text/css" media="screen" charset="utf-8">         
+    <link rel="stylesheet" href="screen.css" type="text/css" media="screen" charset="utf-8">         
     <link rel="stylesheet" href="print.css" type="text/css" media="print" charset="utf-8">        
-    <title>GL-xml-query</title>    
+    <title>cheat-sheet</title>        
     <body>
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>                  
-      <h6>Heading 6</h6>   
-      <p>Hello<p>
-      <pre><code>public class HelloWorld: implements IWorkable {
-        public int mName;
-      }        
-      </code></pre>
+      <h1>cheat-sheet</h1>
+      <h2>Why?</h2>
+      <p> HTML5 template using <a href="https://github.com/vladocar/Hartija---CSS-Print-Framework">Hartija</a> <abbr title="Cascading Style Sheets">CSS</abbr> print framework for fitting dense text or documentation onto a single A4 page as very small text</p>
+      <blockquote> ... like an exam cheat sheet </blockquote>
+      <h3>Differences to Hartija</h3>
+      <ul>
+          <li><h4>Font choices</h4> 
+            <ul>
+              <li> Serif: <a href="https://fonts.google.com/specimen/Libre+Baskerville">Libre Baskerville</a></li>
+              <li> Sans serif: <a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a></li>             
+            </ul>  
+          </li>
+          <li><h5>Smaller font sizes</h5> 
+            <table>
+               <caption>Table 1: Elements affected</caption>
+                <thead>          
+                    <th>css element</th><th>size</th>
+                </thead>        
+                <tbody>
+                  <tr>
+                    <td>body</td><td>8pt</td>
+                  </tr>
+                  <tr>
+                    <td>h1</td><td>15pt</td>
+                  </tr>   
+                  <tr>
+                    <td>h2</td><td>13pt</td>
+                  </tr>   
+                  <tr>
+                    <td>h3</td><td>12pt</td>
+                  </tr>   
+                  <tr>
+                    <td>h4</td><td>11pt</td>
+                  </tr>   
+                  <tr>
+                    <td>h5</td><td>10pt</td>
+                  </tr>   
+                  <tr>
+                    <td>h1</td><td>10pt</td>
+                  </tr>  
+                  <tr>
+                    <td>blockquote</td><td>9pt</td>
+                  </tr>                    
+                </tbody>
+            </table>
+          </li>
+          <li>
+              <h6>Code tag doesn't requires pre tag</h6>
+              <code>public class HelloWorld: implements IWorkable {
+                  public int mName;
+                }
+                      </code>            
+          </li>            
+        </ul>       
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lorem urna, rhoncus sit amet metus nec, gravida dignissim tortor. Nullam varius justo vitae accumsan finibus. Praesent quis nisl id est consectetur semper congue non velit. Aliquam a est nibh. Sed suscipit aliquam massa vitae interdum. Fusce id pellentesque nisi. Sed facilisis ante at libero scelerisque facilisis. Donec interdum vehicula nisi a dignissim. Ut accumsan neque sit amet nibh tincidunt, sit amet placerat enim faucibus. Nam suscipit ac diam quis congue. Sed mattis risus id dictum pulvinar. Quisque dignissim ipsum eu finibus iaculis. Phasellus eget egestas turpis. Pellentesque dictum erat mauris, quis egestas orci volutpat vel. Donec aliquam ultricies urna, iaculis facilisis risus dignissim eget. Vivamus in consequat nunc.
+          
+          Vestibulum laoreet nunc a odio aliquet, ultrices rutrum sem pulvinar. Sed auctor sapien justo, posuere ullamcorper leo volutpat eu. Curabitur id ligula ante. Quisque sit amet lectus blandit, viverra arcu eget, semper erat. Quisque quis dui nisi. Nullam sodales arcu sed sem fermentum tempor. Nam condimentum, nisl eu egestas iaculis, ligula quam suscipit mauris, vehicula interdum est lectus ac turpis. Curabitur nibh lectus, vehicula eget massa non, suscipit facilisis metus. Nulla eleifend velit ac velit pretium, ut interdum enim lobortis. Curabitur dignissim dui sed urna gravida porta.
+          
+          Nulla ac rhoncus nunc, quis scelerisque magna. Duis viverra justo eget sapien vestibulum viverra. Nam ac sollicitudin metus. Nunc lobortis velit id pulvinar consequat. Suspendisse congue pellentesque nisi vel luctus. Morbi mauris libero, pellentesque vel volutpat sit amet, vestibulum sed tellus. Maecenas quis eros nulla. Donec ultricies nisi sit amet enim efficitur, ac dictum turpis tincidunt. Nullam facilisis lacinia lacus, sed maximus diam tincidunt ut. Vestibulum nec orci purus. Maecenas ultricies lectus a mauris vestibulum, non cursus orci vulputate. Morbi vitae vulputate tortor. Vestibulum efficitur at libero tempor cursus. Proin commodo tincidunt lectus, eu mattis augue pulvinar id. Nunc vitae condimentum risus.
+          
+          Integer ut aliquam sapien. Quisque finibus nisl non tempus venenatis. Donec vestibulum vehicula quam et blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed diam turpis, varius nec ullamcorper a, bibendum vestibulum massa. Fusce a faucibus turpis. Duis vitae efficitur turpis. Morbi sit amet velit ac lectus vulputate facilisis. Nullam luctus vestibulum aliquet. Nunc odio tortor, luctus ornare mauris vulputate, facilisis imperdiet purus. Vivamus accumsan tristique varius.
+          
+          Morbi tempus libero sit amet risus vulputate, eget eleifend sem egestas. Aenean efficitur dolor eu odio efficitur commodo. Donec at mauris massa. Aenean mattis est eu neque congue, vitae tempus leo ultrices. Donec placerat interdum leo at pretium. In eu nisi eget metus blandit pretium at volutpat mauris. Fusce viverra convallis dui vitae consectetur. Vivamus ultrices rhoncus eros nec eleifend. Maecenas rutrum lacinia neque nec blandit. Ut scelerisque nibh at nisi lobortis, pharetra ullamcorper velit pharetra. Sed sit amet nibh condimentum massa lacinia lacinia. Donec euismod quam odio, vel aliquet magna elementum et. Vestibulum nisi sapien, pellentesque nec leo in, dignissim ultrices ante. Etiam ullamcorper magna nibh, in tincidunt leo elementum quis. Mauris vel lorem tellus.
+      </p>
+      <a href="http://google.com">Google.com</a>
     </body>
   </head>
   </body>
